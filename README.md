@@ -1,4 +1,4 @@
-# Projet-1-intégrer-la-maquette-d-un-site
+# Projet 1 : intégrer la maquette d'un site
 
 Le site doit tenir sur une page avec un menu qui suit la navigation. Les différentes sections attendues sont :
 
