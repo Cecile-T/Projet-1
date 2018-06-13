@@ -2,6 +2,11 @@
 
 [Lien du site](http://cecile-thienard.fr/wa/) 
 
+**Projet validé le 06/04/2018. Commentaire de la soutenance :  
+Projet d'une excellente qualité  
+Des compétences techniques acquises  
+Un diaporama clair pour soutenir une présentation soignée**
+
 Le site doit tenir sur une page avec un menu qui suit la navigation. Les différentes sections attendues sont :
 
 * Un premier écran d'accueil de bienvenue, très visuel
