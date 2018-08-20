@@ -1,0 +1,1274 @@
+/* Elements principaux de la page*/
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+.bleu_bis {
+    color: #5CADD3;
+}
+
+.bleu {
+    color: #468CAD;
+}
+
+.gris {
+    color: #64686D;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+strong {
+    font-weight: normal;
+}
+
+/******************************************** HEADER **************************************/
+
+/* Mise en forme du header + mise en place du scroll fixe*/
+
+header {
+    background-color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+/* Menu de navigation*/
+
+ul {
+    list-style-type: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+nav a {
+    text-decoration: none;
+    color: #64686D;
+}
+
+/************************************** SECTION ACCUEIL ***********************************/
+
+#accueil img {
+    width: 100%;
+}
+
+h1 {
+    font-weight: 900;
+}
+
+/* Boutons bleus infos dans section accueil et message dans section contact*/
+
+.bouton_infos,
+.bouton_message {
+    background-color: #5CADD3;
+    color: white;
+    text-align: center;
+    border-radius: 3px;
+    vertical-align: center;
+}
+
+/* Survol bouton bleu infos*/
+
+.bouton_infos:hover {
+    background-color: #468CAD;
+}
+
+/************************************ SECTION SERVICES *****************************/
+
+#services h2 {
+    text-align: center;
+    margin-bottom: 1%;
+}
+
+/* Centrage de la phrase sous services et projets*/
+
+.description {
+    text-align: center;
+}
+
+/* Trait de séparation sous services et projets*/
+
+.separation {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.rond_bleu_separation {
+    border-radius: 100%;
+    border: 4px solid white;
+    width: 15px;
+    height: 15px;
+    background-color: #5CADD3;
+}
+
+.trait {
+    background-color: #EBEBEB;
+    border-radius: 1px;
+}
+
+/* Icones partie services*/
+
+.icone_services {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.rond_bleu {
+    border-radius: 100%;
+    border: 4px solid white;
+    width: 15px;
+    height: 15px;
+    background-color: #5CADD3;
+    position: relative;
+}
+
+.rond_gris {
+    border: 1px solid #D9D9D9;
+    border-radius: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+/*Texte partie service*/
+
+aside {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+aside p {
+    text-align: justify;
+}
+
+/************************************ SECTION PROJETS *****************************/
+
+#projets h2 {
+    text-align: center;
+    margin-bottom: 1%;
+}
+
+#projets {
+    background-color: #F5F5F5;
+}
+
+/*Menu 4 boutons bleus de la section projets*/
+
+.menu_portfolio {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    background-color: #E5E5E5;
+    margin: auto;
+    font-weight: 500;
+    color: #64686D;
+}
+
+.element_menu_portfolio {
+    margin: auto;
+}
+
+.element_menu_portfolio:hover {
+    background-color: #5CADD3;
+    color: white;
+}
+
+/* Conteneur des images du portfolio*/
+
+.conteneur_portfolio {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+/*Figcaption section projet*/
+
+.conteneur_portfolio figure {
+    position: relative;
+}
+
+figcaption {
+    color: #FFF;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    position: absolute;
+    -webkit-transition: opacity 2s ease-in-out;
+    transition: opacity 2s ease-in-out;
+}
+
+figure:hover figcaption {
+    opacity: 1;
+}
+
+.description_figcaption {
+    font-weight: bold;
+}
+
+.oeil_figcaption {
+    background-color: #5CADD3;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    position: absolute;
+}
+
+/********************************* SECTION CONTACT **********************************/
+
+iframe {
+    width: 100%;
+}
+
+/* Bouton message*/
+
+.bouton_message {
+    border: 1px solid #5CADD3;
+}
+
+/* Filtre bleu sur la carte*/
+
+.overlay {
+    position: absolute;
+    z-index: 7;
+    background-color: rgba(92, 173, 211, 0.3);
+    width: 100%;
+    height: 600px;
+    pointer-events: none;
+}
+
+/* Mise en forme du formulaire de contact*/
+
+.contact_form h3 {
+    font-weight: 900;
+}
+
+.contact_form {
+    background-color: rgba(245, 250, 253, 0.8);
+}
+
+input {
+    border: 1px solid #CCCCCC;
+}
+
+textarea {
+    border: 1px solid #CCCCCC;
+}
+
+#contact strong {
+    font-weight: bold;
+}
+
+/******************************************************************** REGLES D'AFFICHAGE MOBILES************************************************************************************/
+
+@media all and (max-device-width: 767px) {
+
+    /*Taille du texte*/
+    li {
+        font-size: 1em;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    h2 {
+        font-size: 1.8em;
+    }
+
+    h3 {
+        font-size: 1.1em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+
+    .texte_icones_services p {
+        font-size: 0.9em;
+    }
+
+    .texte_menu {
+        font-size: 0.9em;
+    }
+
+    /************************************ HEADER ********************************/
+    /* Mise en forme du header*/
+    header {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+
+    /* Menu de navigation*/
+    nav ul {
+        margin-left: 0px;
+        padding-left: 0px;
+    }
+
+    nav li {
+        margin-right: 5%;
+    }
+
+    nav {
+        margin-left: -7%;
+    }
+
+    /* Margin top du bloc sections pour le scroll du header */
+    #blocs_sections {
+        margin-top: 6.5em;
+    }
+
+    /*********************************** SECTION ACCUEIL *****************************/
+    #accueil h1 {
+        text-align: center;
+    }
+
+    #accueil p {
+        color: #64686D;
+        text-align: center;
+    }
+
+    /* Boutons bleus infos*/
+    .bouton_infos {
+        border-bottom: 3px solid #468CAD;
+        font-size: 0.9em;
+        width: 7em;
+        padding: 7px 7px;
+        margin: auto;
+    }
+
+    /* pas de slider en version mobile, disparition des demi cercles et des flèches sur le slider*/
+    .slide2,
+    .demi_cercle_gauche,
+    .demi_cercle_droite,
+    .icone_slider_gauche,
+    .icone_slider_droite {
+        display: none;
+    }
+
+    /********************************** SECTION SERVICES ***************************/
+    #services {
+        padding-top: 2%;
+        padding-bottom: 4%;
+    }
+
+    /* Trait de séparation pour services et projets*/
+    .trait {
+        width: 13%;
+        height: 1px;
+    }
+
+    #services img {
+        width: 100%;
+    }
+
+    /*Mise en forme conteneur section services*/
+    .texte_icones_services {
+        margin: auto;
+    }
+
+    .texte_services {
+        margin-left: 3%;
+        margin-right: 1.5%;
+    }
+
+    .texte_services h3 {
+        margin: 3%;
+    }
+
+    .texte_services p {
+        margin: 3%;
+    }
+
+    /* Icones services*/
+    .icone_services {
+        margin-right: 0;
+    }
+
+    .rond_bleu {
+        left: 78px;
+    }
+
+    .rond_gris {
+        width: 66px;
+        height: 66px;
+    }
+
+    /******************************** SECTION PROJETS ***************************/
+    #projets {
+        padding-top: 2%;
+        padding-bottom: 4%;
+        width: 100%;
+    }
+
+    .conteneur_portfolio img {
+        width: 100%;
+    }
+
+    /*Menu 4 boutons bleus section projets*/
+    .menu_portfolio {
+        width: 20em;
+        border-radius: 5px;
+        margin-top: 7%;
+        margin-bottom: 5%;
+        height: 45px;
+    }
+
+    .element_menu_portfolio {
+        padding: 0.8em 0.7em;
+    }
+
+    .triangle {
+        position: absolute;
+        display: none;
+        margin-top: -0.3em;
+        margin-left: 1.5em;
+    }
+
+    .element_menu_portfolio:hover {
+        border-bottom: 3px solid #468CAD;
+    }
+
+    .element_menu_portfolio:hover .triangle {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+    }
+
+    .menu_gauche {
+        border-radius: 5px 0 0 5px;
+    }
+
+    .menu_droite {
+        border-radius: 0 5px 5px 0;
+    }
+
+    /*Figcaption sur images section projets*/
+    figcaption {
+        font-size: 1em;
+        width: 96%;
+        height: 4em;
+        margin: 0 auto;
+        bottom: 0.3em;
+        padding-left: 4%;
+        padding-top: 6%;
+    }
+
+    .oeil_figcaption {
+        border: 1px solid white;
+        width: 2em;
+        height: 2em;
+        top: -1em;
+        left: 80%;
+        border-radius: 100%;
+    }
+
+    /************************************* SECTION CONTACT************************/
+    #contact {
+        margin-top: -5.1%;
+        padding-top: 0;
+    }
+
+    /* Bouton message*/
+    .bouton_message {
+        border-bottom: 3px solid #468CAD;
+        font-size: 0.9em;
+        width: 10em;
+        height: 10%;
+        padding: 7px 7px;
+    }
+
+    /*Mise en forme du formulaire de contact*/
+    .contact_form {
+        margin-top: -8%;
+        padding-top: 5%;
+        padding-bottom: 5%;
+        width: 80%;
+        height: 55%;
+        padding-left: 20%;
+    }
+
+    input {
+        border-radius: 4px;
+        width: 70%;
+        height: 20px;
+        margin-bottom: 4%;
+    }
+
+    textarea {
+        border-radius: 4px;
+        width: 69%;
+        height: 100px;
+        margin-bottom: 4%;
+    }
+
+    .contact_form p:nth-child(4) {
+        margin-bottom: 4.5%;
+    }
+
+    .contact_form h3 {
+        font-size: 1.6em;
+        margin-bottom: 4.3%;
+    }
+
+    .contact_form p {
+        font-size: 0.9em;
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+
+}
+
+/******************************************************************** REGLES D'AFFICHAGE TABLETTES************************************************************************************/
+
+@media all and (min-device-width: 768px) and (max-device-width: 1024px) {
+
+    /*Taille du texte*/
+    li {
+        font-size: 1.2em;
+    }
+
+    h1 {
+        font-size: 1.6em;
+    }
+
+    h2 {
+        font-size: 1.8em;
+    }
+
+    h3 {
+        font-size: 1.4em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+
+    .texte_icones_services p {
+        font-size: 0.9em;
+    }
+
+    .texte_menu {
+        font-size: 0.9em;
+    }
+
+    /************************************ HEADER ********************************/
+    /* Mise en forme du header*/
+    header {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+
+    /* Menu de navigation*/
+    nav ul {
+        margin-left: 0px;
+        padding-left: 0px;
+    }
+
+    nav li {
+        margin-right: 1em;
+    }
+
+    nav {
+        margin-left: 1em;
+    }
+
+    /* Margin top du bloc sections pour le scroll du header */
+    #blocs_sections {
+        margin-top: 12%;
+    }
+
+    /*********************************** SECTION ACCUEIL *****************************/
+    #accueil h1 {
+        text-align: center;
+    }
+
+    #accueil p {
+        color: #64686D;
+        text-align: center;
+    }
+
+    /* Boutons bleus infos*/
+    .bouton_infos {
+        border-bottom: 3px solid #468CAD;
+        font-size: 0.9em;
+        width: 6em;
+        padding: 7px 7px;
+        margin: auto;
+    }
+
+    /* pas de slider en version mobile, disparition des demi cercles et des flèches sur le slider*/
+    .slide2,
+    .demi_cercle_gauche,
+    .demi_cercle_droite,
+    .icone_slider_gauche,
+    .icone_slider_droite {
+        display: none;
+    }
+
+    /********************************** SECTION SERVICES ***************************/
+    #services {
+        padding-top: 2%;
+        padding-bottom: 4%;
+    }
+
+    /* Trait de séparation pour services et projets*/
+    .trait {
+        width: 13%;
+        height: 1px;
+    }
+
+    /*Mise en forme du conteneur services*/
+    aside p {
+        text-align: left;
+    }
+
+    #services img {
+        width: 100%;
+    }
+
+    .conteneur_services {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+
+    .texte_icones_services {
+        margin: auto;
+    }
+
+    .texte_services {
+        margin: auto;
+        width: 65%;
+    }
+
+    /* Icones services*/
+    .icone_services {
+        margin: auto;
+    }
+
+    .rond_bleu {
+        left: 78px;
+    }
+
+    .rond_gris {
+        width: 66px;
+        height: 66px;
+    }
+
+    /******************************** SECTION PROJETS ***************************/
+    #projets {
+        padding-top: 2%;
+        padding-bottom: 4%;
+        width: 100%;
+    }
+
+    .conteneur_portfolio {
+        margin: auto;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+
+    .conteneur_portfolio img {
+        width: 100%;
+    }
+
+    .conteneur_portfolio figure {
+        width: 37%;
+    }
+
+    /*Menu 4 boutons bleus section projets*/
+    .menu_portfolio {
+        width: 22em;
+        border-radius: 5px;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        height: 45px;
+    }
+
+    .element_menu_portfolio {
+        padding: 0.8em 1em;
+    }
+
+    .triangle {
+        position: absolute;
+        display: none;
+        margin-top: -0.3em;
+        margin-left: 2.3%;
+    }
+
+    .element_menu_portfolio:hover {
+        border-bottom: 3px solid #468CAD;
+    }
+
+    .element_menu_portfolio:hover .triangle {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+    }
+
+    .menu_gauche {
+        border-radius: 5px 0 0 5px;
+    }
+
+    .menu_droite {
+        border-radius: 0 5px 5px 0;
+    }
+
+    /*Figcaption sur images section projets*/
+    figcaption {
+        font-size: 1em;
+        width: 96%;
+        height: 30%;
+        margin: 0 auto;
+        bottom: 2%;
+        padding-left: 4%;
+        padding-top: 6%;
+    }
+
+    .oeil_figcaption {
+        border: 1px solid white;
+        width: 2em;
+        height: 2em;
+        top: -1em;
+        left: 80%;
+        border-radius: 100%;
+    }
+
+    /************************************* SECTION CONTACT************************/
+    #contact {
+        margin-top: -5.1%;
+        padding-top: 0;
+    }
+
+    /* Bouton message*/
+    .bouton_message {
+        border-bottom: 3px solid #468CAD;
+        font-size: 0.9em;
+        width: 8em;
+        height: 10%;
+        padding: 7px 7px;
+    }
+
+    /*Mise en forme du formulaire de contact*/
+    .contact_form {
+        margin-top: -8%;
+        padding-top: 10%;
+        padding-bottom: 5%;
+        width: 80%;
+        height: 55%;
+        padding-left: 20%;
+    }
+
+    input {
+        border-radius: 4px;
+        width: 70%;
+        height: 20px;
+        margin-bottom: 4%;
+    }
+
+    textarea {
+        border-radius: 4px;
+        width: 69%;
+        height: 100px;
+        margin-bottom: 4%;
+    }
+
+    .contact_form p:nth-child(4) {
+        margin-bottom: 4.5%;
+    }
+
+    .contact_form h3 {
+        font-size: 1.6em;
+        margin-bottom: 4.3%;
+    }
+
+    .contact_form p {
+        font-size: 0.9em;
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+}
+
+/******************************************************************** REGLES D'AFFICHAGE DESKTOP************************************************************************************/
+
+@media all and (min-device-width: 1025px) {
+    /*Taille du texte*/
+    li {
+        font-size: 1.1em;
+    }
+
+    h1 {
+        font-size: 2.3em;
+    }
+
+    h2 {
+        font-size: 2.9em;
+    }
+
+    h3 {
+        font-size: 1.3em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+
+    /***************************************** HEADER *****************************/
+    /* Mise en forme du header et du menu de navigation*/
+    nav li {
+        margin-right: 12%;
+        margin-top: 1.3em;
+    }
+
+    nav a:hover {
+        border-top: 3px solid #3491B2;
+        color: black;
+    }
+
+    nav a {
+        padding-top: 1.5em;
+        /*pour la barre bleue en hover*/
+    }
+
+    header {
+        -ms-flex-pack: distribute;
+        justify-content: space-around;
+    }
+
+    header p {
+        margin-top: 1em;
+    }
+
+    /*********************************** SECTION ACCUEIL *************************/
+    /*Slider*/
+    @-webkit-keyframes autoslide {
+        0% {
+            -webkit-transform: translateX(0);
+            transform: translateX(0);
+        }
+
+        25% {
+            -webkit-transform: translateX(0);
+            transform: translateX(0);
+        }
+
+        50% {
+            -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+        }
+
+        75% {
+            -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+        }
+
+        100% {
+            -webkit-transform: translateX(0);
+            transform: translateX(0);
+        }
+    }
+    @keyframes autoslide {
+        0% {
+            -webkit-transform: translateX(0);
+            transform: translateX(0);
+        }
+
+        25% {
+            -webkit-transform: translateX(0);
+            transform: translateX(0);
+        }
+
+        50% {
+            -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+        }
+
+        75% {
+            -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+        }
+
+        100% {
+            -webkit-transform: translateX(0);
+            transform: translateX(0);
+        }
+    }
+
+    #accueil {
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+        margin-bottom: 0%;
+    }
+
+    .slider {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        width: 200%;
+        /*car 2 images*/
+        -webkit-animation: autoslide 14s infinite ease-in-out;
+        animation: autoslide 14s infinite ease-in-out;
+        margin-bottom: 0%;
+    }
+
+    .slide1,
+    .slide2 {
+        margin: 0;
+        width: 100%;
+    }
+
+    .slider img {
+        margin: 0;
+    }
+
+    /* Mise en forme du texte sur le slider*/
+    .texte_slider {
+        position: absolute;
+        z-index: 5;
+        margin-left: 6%;
+        top: 27%;
+    }
+
+    .texte_slider h1 {
+        margin-bottom: 2%;
+        color: white;
+        width: 70%;
+    }
+
+    .texte_slider p {
+        color: white;
+        margin-bottom: 3%;
+        font-size: 0.9em;
+    }
+
+    /* Boutons bleus infos*/
+    .bouton_infos {
+        border-bottom: 4px solid #468CAD;
+        font-size: 1.1em;
+        width: 13%;
+        padding: 7px 3px;
+        cursor: pointer;
+    }
+
+    /* Flèches gauche et droite du slider*/
+    .icone_slider_gauche,
+    .icone_slider_droite {
+        position: absolute;
+        color: white;
+        z-index: 9;
+    }
+
+    .demi_cercle_gauche {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -ms-flex-line-pack: center;
+        align-content: center;
+        border-radius: 0 5em 5em 0;
+        width: 3em;
+        height: 5em;
+        background-color: rgba(24, 24, 24, 0.3);
+        cursor: pointer;
+        z-index: 8;
+        top: 45%;
+        left: 0;
+    }
+
+    .demi_cercle_droite {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -ms-flex-line-pack: center;
+        align-content: center;
+        border-radius: 5em 0 0 5em;
+        width: 3em;
+        height: 5em;
+        background-color: rgba(24, 24, 24, 0.4);
+        cursor: pointer;
+        z-index: 8;
+        top: 45%;
+        right: 0;
+    }
+
+    /* Margin top du bloc des sections pour le scroll du header */
+    #blocs_sections {
+        margin-top: 4%;
+    }
+
+    /************************************ SECTION PROJETS *************************/
+    #projets {
+        padding-top: 2%;
+        padding-bottom: 4%;
+        width: 100%;
+    }
+
+    /*Menu 4 boutons bleus portfolio*/
+    .menu_portfolio {
+        width: 20em;
+        border-radius: 6px;
+        margin-top: 2%;
+        height: 2.8em;
+        margin-bottom: 3%;
+    }
+
+    .element_menu_portfolio {
+        padding: 0.6em 0.5em;
+    }
+
+    .triangle {
+        position: absolute;
+        display: none;
+        margin-top: -0.4em;
+        margin-left: 1.5%;
+    }
+
+    .element_menu_portfolio:hover {
+        border-bottom: 4px solid #468CAD;
+    }
+
+    .element_menu_portfolio:hover .triangle {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+    }
+
+    .menu_gauche {
+        border-radius: 6px 0 0 6px;
+        padding-left: 3.1%;
+        margin-left: 0.3%;
+    }
+
+    .menu_droite {
+        border-radius: 0 6px 6px 0;
+        padding-right: 3.1%;
+        margin-right: 0.3%;
+    }
+
+    /*Mise en forme conteneur des images du portfolio*/
+    .conteneur_portfolio {
+        margin: auto;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+
+    .conteneur_portfolio img {
+        width: 100%;
+    }
+
+    .conteneur_portfolio figure {
+        width: 19%;
+    }
+
+    /*Figcaption sur les images section projets*/
+    figcaption {
+        font-size: 0.9em;
+        width: 96%;
+        height: 30%;
+        margin: 0 auto;
+        bottom: 2%;
+        padding-left: 4%;
+        padding-top: 5%;
+    }
+
+    .oeil_figcaption {
+        border: 2px solid white;
+        width: 35px;
+        height: 35px;
+        top: -24%;
+        left: 82%;
+        border-radius: 100%;
+    }
+
+    /*********************************** SECTION SERVICES ************************/
+    #services {
+        padding-top: 1%;
+        padding-bottom: 4%;
+    }
+
+    /* Trait de séparation dans services et projets*/
+    .trait {
+        width: 5%;
+        height: 1.5px;
+    }
+
+    /* Mise en forme du conteneur service*/
+    .conteneur_services {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        margin-top: 4%;
+    }
+
+    .texte_icones_services {
+        width: 40%;
+        margin: auto;
+    }
+
+    .image_ordinateur {
+        margin-left: 12%;
+    }
+
+    .texte_services {
+        margin-left: 5%;
+        font-size: 0.9em;
+    }
+
+    .texte_services h3 {
+        margin: 2%;
+    }
+
+    .texte_services p {
+        margin: 2%;
+    }
+
+    /* Icones services*/
+    .icone_services {
+        margin: auto;
+    }
+
+    .rond_bleu {
+        left: 77px;
+    }
+
+    .rond_gris {
+        width: 65px;
+        height: 65px;
+    }
+
+    /*************************************** SECTION CONTACT*********************/
+    #contact {
+        margin-top: -1.2%;
+        padding-top: 0;
+        padding-bottom: 0;
+        margin-bottom: 0;
+        position: relative;
+    }
+
+    /* Bouton message*/
+    .bouton_message {
+        border-bottom: 4px solid #468CAD;
+        font-size: 0.9em;
+        width: 35%;
+        padding: 5px 3px;
+        cursor: pointer;
+        height: 2.5em;
+    }
+
+    /*Formulaire de contact*/
+    .contact_form {
+        position: absolute;
+        top: 3em;
+        right: 6em;
+        width: 20em;
+        height: 26em;
+        z-index: 8;
+        padding-left: 2%;
+    }
+
+    input {
+        border-radius: 4px;
+        width: 90%;
+        height: 2em;
+        margin-bottom: 3%;
+    }
+
+    textarea {
+        border-radius: 4px;
+        width: 89%;
+        height: 7em;
+        margin-bottom: 3%;
+    }
+
+    .contact_form p:nth-child(4) {
+        margin-bottom: 5%;
+    }
+
+    .contact_form h3 {
+        font-size: 1.6em;
+        margin-bottom: 3%;
+        margin-top: 2%;
+    }
+
+    .contact_form p {
+        font-size: 0.9em;
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+
+}
