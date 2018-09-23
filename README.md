@@ -4,7 +4,7 @@
 
 [Descriptif du projet à réaliser](https://openclassrooms.com/fr/projects/integrez-la-maquette-du-site-d-une-agence-web) 
 
-**Projet validé le 06/04/2018. Commentaire de la soutenance :  
+**Projet validé. Commentaire de la soutenance :  
 Projet d'une excellente qualité  
 Des compétences techniques acquises  
 Un diaporama clair pour soutenir une présentation soignée**
