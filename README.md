@@ -1,7 +1,5 @@
 # Projet 1 : intégrer la maquette d'un site
 
-[Lien du site](https://cecile-thienard.fr/wa/) 
-
 [Descriptif du projet à réaliser](https://openclassrooms.com/fr/projects/integrez-la-maquette-du-site-d-une-agence-web) 
 
 **Projet validé. Commentaire de la soutenance :  
